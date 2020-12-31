@@ -48,6 +48,8 @@ public class LetterCount {
 
         String[] strDizi= myStr.split("");
 
+        //  str= bugun     str.charAt(0)  ->b    u  g  u n
+
         int sayac;
 
         for (int i = 0; i <strDizi.length ; i++) {
@@ -61,9 +63,13 @@ public class LetterCount {
             }
             result.put(strDizi[i].charAt(0),sayac);
 
+            /** b-1
+             *   u-2
+             *   g -1
+             *   u-2  -- tekrar kayit yapmadi
+             *   n-1
+             */
         }
-
-
         return  result;
     }
 

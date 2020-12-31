@@ -41,9 +41,9 @@ public class TotalLength {
     public int getTotalLength(HashSet<String> mySet){
 
         int toplam=0;
+
         for (String a:mySet) {
             toplam+=a.length();
-
         }
 
         if (toplam==0)
@@ -51,6 +51,7 @@ public class TotalLength {
         else return toplam;
 
     }
+
 
 }
 

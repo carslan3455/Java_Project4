@@ -29,11 +29,11 @@ public class sortHashSet {
 
 
      */
-    public ArrayList<Integer> sort(HashSet<Integer> allNumbers){
+    public ArrayList<Integer> sort(HashSet<Integer> allNumbers){  // 3 1  7  6
 
         ArrayList<Integer> result = new ArrayList<>();
 
-        Set<Integer> tset = new TreeSet<>();
+        Set<Integer> tset = new TreeSet<>();   // 1  3  6  7
 
 
         for (Integer s : allNumbers) {
@@ -63,7 +63,7 @@ public class sortHashSet {
      */
 
     /*
-        TreeSet<Integer> tree=new TreeSet<>(allNumbers);
+        TreeSet<Integer> tree=new TreeSet<>(allNumbers);  // 3  1  7  6
         ArrayList<Integer> result = new ArrayList<>();
         for (Integer a:tree){
             result.add(a);
@@ -75,6 +75,8 @@ public class sortHashSet {
         Set<Integer> trSet = new TreeSet<>(allNumbers);
 
         ArrayList<Integer> result = new ArrayList<>(trSet);
-
+         return result;
      */
+
+
 }

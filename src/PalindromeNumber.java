@@ -32,7 +32,6 @@ public class PalindromeNumber {
 
         return trsSayi;
 
-
     }
 
 
@@ -100,13 +99,13 @@ public class PalindromeNumber {
         int sayac = 0;
 
 
-        while (toplam != reverse) {
+        while (toplam != reverse) {   // 349  != 943      343  == 343
             sayac++;
             reverse = returnNum(toplam);
             toplam += reverse;
-            reverse = returnNum(toplam);
-            if (toplam == reverse)
-                return sayac;
+            reverse = returnNum(toplam);    // 1292   2921
+//            if (toplam == reverse)
+//                return sayac;
         }
 
         return sayac;

@@ -42,11 +42,11 @@ public class DigitPowers {
       */
 
 
-        public int power4(int num){
+        public int power4(int num){  // 1234
 
             String strSayi=Integer.toString(num);
 
-            String[] strDizi= strSayi.split("");
+            String[] strDizi= strSayi.split("");  //   1  2  3  4
 
             int sonuc=0;
 
@@ -54,6 +54,7 @@ public class DigitPowers {
 
                 int cevir=Integer.parseInt(strDizi[i]);
                 sonuc+=Math.pow(cevir,4);
+                // sayinin kacinci kuvvetini almak istiyorsak ilk once sayi sonra kuvvet degeri yaziliyor
 
             }
 
@@ -62,7 +63,7 @@ public class DigitPowers {
         /*
         int top=0;
             do {
-                int sayı=num%10;
+                int sayı=num%10;     // 1234   4  3  2  1
                 top+=Math.pow(sayı,4);
                 num=num/10;
 
@@ -74,10 +75,11 @@ public class DigitPowers {
      int sumPower4 = 0;
         while(num>0){
             sumPower4 += Math.pow(num%10, 4);
-            num/=10;
+            num/=10;   // 1234->123  ->12->1
         }
         return sumPower4;
      */
+
     /*
      if (num == 0 ) return 0;
         else {
